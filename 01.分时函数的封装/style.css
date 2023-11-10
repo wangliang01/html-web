@@ -1,0 +1,15 @@
+.btn {
+  padding: 8px 12px;
+  /* 蓝色 */
+  background: #44a7fe;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.container {
+  color: #666;
+  font-size: 18px;
+  line-height: 1.5em;
+}
