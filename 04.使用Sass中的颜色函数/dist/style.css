@@ -3,6 +3,12 @@
   padding: 0;
 }
 
+.my-button-group {
+  margin: 20px;
+  display: flex;
+  gap: 12px;
+}
+
 .my-button {
   padding: 8px 12px;
   border-radius: 4px;
