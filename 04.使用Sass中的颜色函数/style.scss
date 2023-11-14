@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+$btnColors: (
+  "default": #fff,
+  "primary": #409eff,
+  "success": #67c23a,
+  "info": #909399,
+  "warning": #e6a23c,
+  "danger": #f56c6c,
+);
+
+.my-button {
+  padding: 8px 12px;
+  border-radius: 4px;
+}
+
+@each $name, $bgColor in $btnColors {
+  .my-button--#{$name} {
+    background: $bgColor;
+    $color: #fff;
+
+    @if $name == "default" {
+      border: 1px solid map-get($map: $btnColors, $key: "info");
+      color: map-get($btnColors, "info")
+    } @else {
+      border: 1px solid $bgColor;
+      color: $color;
+    }
+    &:hover {
+      background: darken($bgColor, 10%);
+    }
+    &:active {
+      background: darken($bgColor, 20%);
+    }
+    &:disabled {
+      background: lighten($bgColor, 20%);
+      border: 1px solid lighten($bgColor, 20%);
+    }
+  }
+}

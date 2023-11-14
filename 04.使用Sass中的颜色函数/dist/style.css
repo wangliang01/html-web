@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.my-button {
+  padding: 8px 12px;
+  border-radius: 4px;
+}
+
+.my-button--default {
+  background: #fff;
+  border: 1px solid #909399;
+  color: #909399;
+}
+.my-button--default:hover {
+  background: #e6e6e6;
+}
+.my-button--default:active {
+  background: #cccccc;
+}
+.my-button--default:disabled {
+  background: white;
+  border: 1px solid white;
+}
+
+.my-button--primary {
+  background: #409eff;
+  border: 1px solid #409eff;
+  color: #fff;
+}
+.my-button--primary:hover {
+  background: #0d84ff;
+}
+.my-button--primary:active {
+  background: #006bd9;
+}
+.my-button--primary:disabled {
+  background: #a6d2ff;
+  border: 1px solid #a6d2ff;
+}
+
+.my-button--success {
+  background: #67c23a;
+  border: 1px solid #67c23a;
+  color: #fff;
+}
+.my-button--success:hover {
+  background: #529b2e;
+}
+.my-button--success:active {
+  background: #3d7323;
+}
+.my-button--success:disabled {
+  background: #a3db87;
+  border: 1px solid #a3db87;
+}
+
+.my-button--info {
+  background: #909399;
+  border: 1px solid #909399;
+  color: #fff;
+}
+.my-button--info:hover {
+  background: #767980;
+}
+.my-button--info:active {
+  background: #5d6066;
+}
+.my-button--info:disabled {
+  background: #c5c7ca;
+  border: 1px solid #c5c7ca;
+}
+
+.my-button--warning {
+  background: #e6a23c;
+  border: 1px solid #e6a23c;
+  color: #fff;
+}
+.my-button--warning:hover {
+  background: #d48a1b;
+}
+.my-button--warning:active {
+  background: #a76d15;
+}
+.my-button--warning:disabled {
+  background: #f2cd96;
+  border: 1px solid #f2cd96;
+}
+
+.my-button--danger {
+  background: #f56c6c;
+  border: 1px solid #f56c6c;
+  color: #fff;
+}
+.my-button--danger:hover {
+  background: #f23c3c;
+}
+.my-button--danger:active {
+  background: #eb1010;
+}
+.my-button--danger:disabled {
+  background: #fbcccc;
+  border: 1px solid #fbcccc;
+}
