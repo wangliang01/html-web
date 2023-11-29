@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .item {
+        -webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+        clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+        transition: 0.5s;
+      }
+
+      .item:hover {
+        -webkit-clip-path: polygon(100% 0, 100% 100%, 0 99%, 0 0);
+        clip-path: polygon(100% 0, 100% 100%, 0 99%, 0 0);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img src="https://picsum.photos/200" alt="" class="item" />
+    </div>
+  </body>
+</html>
