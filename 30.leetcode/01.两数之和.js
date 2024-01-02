@@ -5,15 +5,15 @@
 function twoSum(nums, target) {
     const map = new Map()
     for (let i = 0; i < nums.length; i++) {
-        if (map.has(target - nums[i])) {
-            return [map.get(target - nums[i]), i];
+        let temp = target - nums[i] 
+        if (map.get(temp)) {
+            return [temp, nums[i]]
         }
-        map.set(nums[i], i);
+        map.set(nums[i], i)
     }
-    return [];
+    return []
 }
 
+// 测试
 
-const nums = [2, 7, 11, 15];
-console.log(twoSum(nums, 9));
 
