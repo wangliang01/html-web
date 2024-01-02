@@ -18,38 +18,30 @@
     给定一个罗马数字，将其转换成整数。
  */
 
-function romanToInt(roman) {
-  // roman
-  let romanMap = {
-    I: 1,
-    V: 5,
-    X: 10,
-    L: 50,
-    C: 100,
-    D: 500,
-    M: 1000
-  }
-
-  // 定义一个total 
-  let total = 0
-
-  // 遍历roman字条串
-  for (let i = 0; i < roman.length; i++) {
-    let cur = roman[i]
-    let next = roman[i + 1]
-    if (next) {
-      if (cur === 'I' && ['V', 'X'].includes(next)) {
-        total -= romanMap[cur]
-      } else if (cur === 'X' && ['L', 'C'].includes(next)) {
-        total -= romanMap[cur]
-      } else if (cur === 'C' && ['D', 'M'].includes(next)) {
-        total -= romanMap[cur]
-      } else {
-        total += romanMap[cur]
+    function romanToInt(roman) {
+      // roman
+      let romanMap = {
+        I: 1,
+        V: 5,
+        X: 10,
+        L: 50,
+        C: 100,
+        D: 500,
+        M: 1000
       }
-    } else {
-      total += romanMap[cur]
+    
+      // 定义一个total 
+      let total = 0
+    
+      // 遍历roman字条串
+      for (let i = 0; i < roman.length; i++) {
+        let cur = roman[i]
+        let next = roman[i + 1]
+        if (next && romanMap[cur] < romanMap[next]) {
+             total -= romanMap[cur]
+        } else {
+          total += romanMap[cur]
+        }
+      }
+      return total
     }
-  }
-  return total
-}
