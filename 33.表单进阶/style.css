@@ -1,0 +1,79 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background-color: #081620;
+  font-size: 14px;
+}
+
+.form {
+  width: 100%;
+  max-width: 400px;
+  padding: 24px 16px;
+  margin: 20px auto;
+  border: 1px solid #ccc;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  font-family: Arial, Helvetica, sans-serif;
+  color: #333;
+}
+
+.form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-item {
+  margin-bottom: 10px;
+  display: flex;
+  color: #666;
+  gap: 10px;
+}
+
+.form-item input, .form-item select, .form-item textarea {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+}
+
+
+.form-item input:focus, .form-item textarea:focus {
+  border-color: #007bff;
+}
+
+.form-item button {
+  outline: none;
+  flex: 1;
+  padding: 8px;
+  background-color: #084fc9;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.form-item button:hover {
+  background-color: #0056b3;
+}
+
+.form-item button:active {
+  background-color: #084fc9;
+  transform: translateY(2px);
+}
+
+.form-item button:disabled {
+  background-color: #4e7acc;
+  color: #fff;
+  cursor: not-allowed;
+}
+
+.form-item textarea {
+  resize: none;
+}

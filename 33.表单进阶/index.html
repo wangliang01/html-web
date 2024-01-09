@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>用户注册</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <form  class="form">
+    <h2>用户注册</h2>
+    <div class="form-item">
+        <input type="text" placeholder="请输入用户手机号">
+    </div>
+    <div class="form-item">
+      <input type="password" placeholder="请输入验证码">
+      <button type="button" class="send-code" disabled>发送验证码</button>
+    </div>
+    <div class="form-item">
+      <input type="password" placeholder="请输入密码">
+    </div>
+    <div class="form-item">
+      <input type="password" placeholder="请再次确认密码">
+    </div>
+    <div class="form-item">
+      <select>
+        <option value="1">爱好1</option>
+        <option value="2">爱好2</option>
+        <option value="3">爱好3</option>
+        <option value="4">爱好4</option>
+        <option value="5">爱好5</option>
+      </select>
+    </div>
+    <div class="form-item">
+      <span>性别</span>
+      <label for="male">
+        <input type="radio" name="sex" id="male">
+        <span>男</span>
+      </label>
+
+      <label for="female">
+        <input type="radio" name="sex" id="female">
+        <span>女</span>
+      </label>
+    </div>
+    <div class="form-item">
+      <textarea placeholder="请输入个人简介"></textarea>
+    </div>
+    <div class="form-item">
+      <label>
+        <input type="checkbox">
+        <span>我已阅读并同意相关条款和隐私政策</span>
+      </label>
+    </div>
+    <div class="form-item">
+      <button type="submit">注册</button>
+      <button type="reset">重置</button>
+    </div>
+  </form>
+</body>
+</html>
