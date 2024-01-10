@@ -77,3 +77,11 @@ html {
 .form-item textarea {
   resize: none;
 }
+
+.form-item .label {
+  vertical-align: 2px;
+}
+
+.cursor label {
+  cursor: pointer;
+}
