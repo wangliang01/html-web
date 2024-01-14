@@ -1,0 +1,55 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: "Microsoft YaHei";
+  color: #fff;
+  line-height: 1.5;
+  text-decoration: none;
+  list-style-type: none;
+}
+.notice {
+  display: flex;
+  /* 来个浅蓝色背景 */
+  background-color: #0099ff;
+  /* 用flex布局 */
+  display: flex;
+  /* 用flex布局后，需要设置align-items */
+  align-items: center;
+  height: 40px;
+  padding: 4px 16px;
+}
+
+.notice .label {
+  padding-right: 16px;
+  border-right: 1px solid #fff;
+  color: #fff;
+  text-align: center;
+  width: 100px;
+}
+
+
+.notice .content {
+  flex: 1;
+  height: 100%;
+  padding: 0 16px;
+  overflow: hidden;
+}
+
+.notice .content .list {
+  height: 100%;
+  overflow: hidden;
+}
+
+.notice .content .item {
+  font-size: 14px;
+  height: 32px;
+  line-height: 32px;
+  margin-bottom: 8px;
+}
+
+.notice .content .item:last-child {
+  margin-bottom: 0;
+}
