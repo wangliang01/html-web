@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul, li {
+    list-style: none;
+}
+
+.menu {
+    background-color: #555;
+    color: #fff;
+    width: 220px;
+}
+
+.menu-item {
+  line-height: 40px;
+  padding-left: 20px;
+  cursor: pointer;
+  border-bottom: 1px solid #555;
+}
+
+.sub-menu {
+  height: 0;
+  overflow: hidden;
+  background-color: #555;
+  color: #fff;
+  padding-left: 20px;
+}
+
+.sub-menu-item, .label {
+  height: 40px;
+  line-height: 40px;
+}
+

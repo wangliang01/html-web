@@ -5,10 +5,10 @@
  * @param {Object} options
  */
 function animate(options) {
-  var from = options.from || 0;
-  var to = options.to || 100;
+  var from = options.from;
+  var to = options.to;
   var duration = options.duration || 1000;
-  var timeStep = options.timeStep || 15; // const easing = options.easing || (t => t); // 使用默认的线性变化
+  var timeStep = options.timeStep || 10; // const easing = options.easing || (t => t); // 使用默认的线性变化
 
   var onProcess = options.onProcess || function () {};
 
@@ -22,7 +22,6 @@ function animate(options) {
   function step() {
     currentStep++;
     from += delta;
-    console.log(from);
 
     if (currentStep >= times) {
       from = to;
