@@ -1,0 +1,54 @@
+{
+  "name": "vue-dialog",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "prepare": "husky install",
+    "pre-commit": "lint-staged",
+    "postinstallmac": "git config core.hooksPath .husky && chmod 700 .husky/*",
+    "prettierwrite": "prettier --write src/**/*.{vue,ts,js,tsx,jsx}",
+    "prettiercheck": "prettier --check src/**/*.{vue,ts,js,tsx,jsx}",
+    "eslint": "eslint --cache --max-warnings 0  \"{src,mock}/**/*.{vue,ts,js,tsx}\" --fix",
+    "commit": "git add . && git-cz"
+  },
+  "dependencies": {
+    "element-plus": "^2.8.1",
+    "vue": "^3.4.37"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.1.2",
+    "unplugin-auto-import": "^0.18.2",
+    "unplugin-vue-components": "^0.27.4",
+    "vite": "^5.4.1",
+    "eslint": "^7.25.0",
+    "prettier": "^2.7.1",
+    "eslint-friendly-formatter": "^4.0.1",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-html": "^6.2.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-vue": "^9.21.1",
+    "@typescript-eslint/parser": "^5.30.7",
+    "husky": "^8.0.1",
+    "lint-staged": "^12.4.1",
+    "@commitlint/cli": "^17.0.3",
+    "@commitlint/config-angular": "^17.0.3",
+    "commitizen": "^4.2.4",
+    "cz-customizable": "^6.9.0",
+    "@commitlint/cz-commitlint": "^17.0.3",
+    "inquirer": "^8.0.0"
+  },
+  "lint-staged": {
+    "*.{js,ts,vue,jsx,tsx}": [
+      "eslint --cache --fix"
+    ],
+    "*.{js,jsx,ts,tsx,md,html,css,lees,scss,sass}": "prettier --write"
+  },
+  "config": {
+    "commitizen": {
+      "path": "@commitlint/cz-commitlint"
+    }
+  }
+}
