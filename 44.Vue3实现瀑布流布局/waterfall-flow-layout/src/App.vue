@@ -76,6 +76,7 @@ function useWaterfallLayout() {
   // 加载更多
   const loadMore = () => {
     createImages()
+    setPosition()
   }
 
 
