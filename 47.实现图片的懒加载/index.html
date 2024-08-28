@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>图片懒加载</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+   
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px;
+        margin: 16px auto;
+        padding: 16px;
+        border: 2px solid #eee;
+        border-radius: 4px;
+        justify-content: start;
+        transition: all 0.5s;
+      }
+
+      img {
+        width: 200px;
+        height: 200px;
+        border-radius: 2px;
+        object-fit: cover;
+        
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img
+        alt=""
+        data-src="imgs/img_1.jpg"
+      /><img
+        alt=""
+        data-src="imgs/img_2.jpg"
+      /><img
+        alt=""
+        data-src="imgs/img_3.jpg"
+      /><img
+        alt=""
+        data-src="imgs/img_4.jpg"
+      /><img
+        alt=""
+        data-src="imgs/img_5.jpg"
+      /><img
+        alt=""
+        data-src="imgs/img_6.jpg"
+      /><img
+        alt=""
+        data-src="imgs/img_7.jpg"
+      /><img
+        alt=""
+        data-src="imgs/img_8.jpg"
+      /><img
+        alt=""
+        data-src="imgs/img_9.jpg"
+      /><img
+        alt=""
+        data-src="imgs/img_10.jpg"
+      /><img
+        alt=""
+        data-src="imgs/img_11.jpg"
+      /><img
+        alt=""
+        data-src="imgs/img_12.jpg"
+      /><img
+        alt=""
+        data-src="imgs/img_13.jpg"
+      /><img
+        alt=""
+        data-src="imgs/img_14.jpg"
+      /><img
+        alt=""
+        data-src="imgs/img_15.jpg"
+      /><img
+        alt=""
+        data-src="imgs/img_16.jpg"
+      /><img
+        alt=""
+        data-src="imgs/img_17.jpg"
+      /><img
+        alt=""
+        data-src="imgs/img_18.jpg"
+      /><img
+        alt=""
+        data-src="imgs/img_19.jpg"
+      /><img
+        alt=""
+        data-src="imgs/img_20.jpg"
+      />
+    </div>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
