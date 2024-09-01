@@ -1,6 +1,7 @@
 <script setup>
 import { ref } from 'vue'
 import { openDialog } from './dialog'
+import CardLight from './card-light/index.vue'
 
 defineProps({
   msg: String
@@ -20,6 +21,7 @@ openDialog({
 
 <template>
   <h1>{{ msg }}</h1>
+  <CardLight></CardLight>
 
   <div class="card">
     <button type="button" @click="count++">count is {{ count }}</button>
