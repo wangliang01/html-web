@@ -31,7 +31,8 @@ html, body {
   opacity: 1;
   box-sizing: border-box;
   border: 1px solid #e6e9fa;
-  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+          backdrop-filter: blur(24px);
   overflow: hidden;
 }
 .container .login {

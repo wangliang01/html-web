@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Carter+One&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Sofia+Sans&display=swap");
+body, html {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  overflow: scroll;
+  background: #000;
+  scroll-timeline-name: --my-scroller;
+}
+
+.g-scroll {
+  height: 300vh;
+}
+
+p {
+  position: fixed;
+  display: inline;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: auto;
+  width: 600px;
+}
+
+a {
+  width: 600px;
+  font-size: 41.6px;
+  line-height: 54px;
+  font-family: "Roboto Mono", monospace;
+  color: #fff;
+  background: linear-gradient(90deg, rgb(87, 111, 98) -25px 0px,rgb(194, 182, 106) 0px 25px,rgb(61, 171, 103) 25px 50px,rgb(193, 12, 255) 50px 75px,rgb(226, 223, 123) 75px 100px,rgb(231, 102, 22) 100px 125px,rgb(64, 102, 203) 125px 150px,rgb(239, 135, 10) 150px 175px,rgb(209, 204, 106) 175px 200px,rgb(169, 69, 21) 200px 225px,rgb(144, 156, 12) 225px 250px,rgb(133, 23, 244) 250px 275px,rgb(211, 40, 179) 275px 300px,rgb(164, 238, 205) 300px 325px,rgb(64, 198, 18) 325px 350px,rgb(193, 133, 35) 350px 375px,rgb(89, 236, 5) 375px 400px,rgb(166, 172, 24) 400px 425px,rgb(110, 103, 127) 425px 450px,rgb(199, 215, 32) 450px 475px,rgb(99, 110, 212) 475px 500px,rgb(159, 97, 47) 500px 525px,rgb(197, 200, 212) 525px 550px,rgb(137, 240, 213) 550px 575px,rgb(195, 41, 157) 575px 600px,rgb(224, 250, 177) 600px 625px,rgb(83, 104, 77) 625px 650px,rgb(84, 218, 188) 650px 675px,rgb(174, 44, 82) 675px 700px,rgb(216, 163, 104) 700px 725px,rgb(185, 111, 71) 725px 750px,rgb(239, 95, 32) 750px 775px,rgb(205, 72, 1) 775px 800px,rgb(155, 171, 144) 800px 825px,rgb(221, 112, 31) 825px 850px,rgb(89, 173, 148) 850px 875px,rgb(156, 58, 208) 875px 900px,rgb(165, 139, 148) 900px 925px,rgb(122, 5, 5) 925px 950px,rgb(89, 139, 133) 950px 975px,rgb(131, 55, 214) 975px 1000px,rgb(235, 167, 119) 1000px 1025px,rgb(65, 17, 50) 1025px 1050px,rgb(148, 232, 101) 1050px 1075px,rgb(122, 122, 6) 1075px 1100px,rgb(186, 97, 127) 1100px 1125px,rgb(185, 117, 253) 1125px 1150px,rgb(116, 115, 85) 1150px 1175px,rgb(186, 193, 88) 1175px 1200px,rgb(210, 244, 59) 1200px 1225px,rgb(249, 27, 25) 1225px 1250px,rgb(174, 67, 86) 1250px 1275px,rgb(146, 248, 105) 1275px 1300px,rgb(57, 59, 112) 1300px 1325px,rgb(127, 59, 202) 1325px 1350px,rgb(177, 240, 143) 1350px 1375px,rgb(61, 142, 60) 1375px 1400px,rgb(255, 73, 174) 1400px 1425px,rgb(213, 51, 104) 1425px 1450px,rgb(53, 12, 7) 1450px 1475px,rgb(136, 116, 251) 1475px 1500px,rgb(252, 24, 5) 1500px 1525px,rgb(208, 185, 238) 1525px 1550px,rgb(122, 137, 110) 1550px 1575px,rgb(232, 134, 82) 1575px 1600px,rgb(62, 2, 101) 1600px 1625px,rgb(250, 5, 250) 1625px 1650px,rgb(143, 221, 167) 1650px 1675px,rgb(242, 32, 26) 1675px 1700px,rgb(98, 170, 41) 1700px 1725px,rgb(199, 228, 194) 1725px 1750px,rgb(210, 182, 187) 1750px 1775px, rgb(153, 48, 89) 0 100%);
+  background-position: 0 0;
+  background-size: 2800px 100%;
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+  animation: colorChange steps(56);
+  animation-timeline: --my-scroller;
+}
+
+@keyframes colorChange {
+  0% {
+    background-position: -1400px 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
