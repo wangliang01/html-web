@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3D地形图</title>
+  <link rel="stylesheet" type="text/css" href="./style.css" />
+  <script type="importmap">
+    {
+      "imports": {
+        "three": "https://cdn.jsdelivr.net/npm/three@0.163.0/build/three.module.js",
+        "three/examples/jsm/": "https://cdn.jsdelivr.net/npm/three@0.163.0/examples/jsm/",
+        "d3": "https://cdn.jsdelivr.net/npm/d3@7.9.0/+esm",
+        "gsap": "https://cdn.jsdelivr.net/npm/gsap@3.12.5/+esm",
+        "jquery": "https://cdn.jsdelivr.net/npm/jquery@3.6.0/+esm"
+      }
+    }
+  </script>
+  <!-- 重要，请到 https://console.amap.com 申请 JS API 的 key和密钥 -->
+  <script>
+    window._AMapSecurityConfig = {
+      securityJsCode: 'd360b45265a6b65016eca2fb8d59da48',
+    }
+  </script>
+
+</head>
+
+<body>
+  <div id="container"></div>
+  <script src="https://webapi.amap.com/loader.js"></script>
+  <script type="text/javascript" src="https://webapi.amap.com/maps?v=2.1Beta&key=c2d8624cfd8ff1058ab6e3ea23d9a779&plugin=AMap.ToolBar,AMap.HawkEye"></script>
+  <script src="./main.js" type="module"></script>
+</body>
+
+</html>

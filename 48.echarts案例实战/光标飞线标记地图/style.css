@@ -1,0 +1,21 @@
+body {
+	background-color: #fff;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px; 
+	color: #000;
+}
+
+a:link, a:visited {
+	color: #4682b4;
+}
+
+a:hover {
+	color: #4169e1;
+}
+
+#main	{
+	width: 1000px;
+	height: 800px;
+	border: 1px solid #ccc;
+	padding: 10px;
+}
