@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width">
+  <link rel="stylesheet" href="https://a.amap.com/jsapi_demos/static/demo-center/css/demo-center.css" />
+  <link rel="stylesheet" type="text/css" href="./style.css"/>
+      <!-- 重要，请到 https://console.amap.com 申请 JS API 的 key和密钥 -->
+      <script> 
+        window._AMapSecurityConfig = {
+          securityJsCode: 'd360b45265a6b65016eca2fb8d59da48',
+        }
+      </script>
+      
+  <title>地图创建与销毁</title>
+</head>
+
+<body>
+  <div id="container"></div>
+  <div class="input-card" style="width:16rem">
+    <h4>创建、销毁地图</h4>
+    <div id="btns">
+      <div class="input-item">
+        <button id="create-btn" class="btn" style="margin-right:1rem;">创建地图</button>
+        <button id="destroy-btn" class="btn">销毁地图</button>
+      </div>
+    </div>
+  </div>
+  <script src="https://webapi.amap.com/maps?v=2.0&key=c2d8624cfd8ff1058ab6e3ea23d9a779"></script>
+  <!-- <script src="https://a.amap.com/jsapi_demos/static/demo-center/js/demoutils.js"></script> -->
+  <script src="./index.js"></script>
+</body>
+
+</html>

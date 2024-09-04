@@ -19,11 +19,12 @@ const camera = new THREE.PerspectiveCamera(
   200
 );
 camera.position.set(0, 45, 45);
+camera.lookAt(new THREE.Vector3(0, 0, 0))
 // 渲染器
 const renderer = new THREE.WebGLRenderer({
-  antialias: true,
-  alpha: true,
-  logarithmicDepthBuffer: true,
+  antialias: true, // antialias抗锯齿
+  alpha: true,// 背景透明
+  logarithmicDepthBuffer: true, // 启用深度缓冲
 });
 renderer.setSize(window.innerWidth, window.innerHeight);
 
@@ -31,7 +32,7 @@ renderer.setSize(window.innerWidth, window.innerHeight);
 const css2Renderer = new CSS2DRenderer();
 css2Renderer.setSize(window.innerWidth, window.innerHeight);
 css2Renderer.domElement.style.position = "absolute";
-css2Renderer.domElement.style.top = "0px";
+css2Renderer.domElement.style.top = "45px";
 css2Renderer.domElement.style.left = "0px";
 css2Renderer.domElement.style.pointerEvents = "none";
 
@@ -39,24 +40,26 @@ container.appendChild(css2Renderer.domElement);
 container.appendChild(renderer.domElement);
 
 // 控制器
-const controls = new OrbitControls(camera, renderer.domElement);
-controls.enableDamping = true;
-controls.maxDistance = 80;
-controls.minDistance = 20;
-controls.target.set(0, 0, 5);
-controls.maxPolarAngle = THREE.MathUtils.degToRad(80);
+// const controls = new OrbitControls(camera, renderer.domElement);
+// controls.enableDamping = true; // 启用阻尼效果,使得相机的旋转动作更加平滑，类似于物理世界中的惯性运动。
+// // // 设定相机到目标点的最大和最小距离分别为 80 和 20。这可以防止相机过于远离或过于靠近场景中的对象。
+// controls.maxDistance = 80;
+// controls.minDistance = 20;
+// controls.target.set(0, 0, 5); // 将相机的目标焦点位置设置为坐标 (0, 0, 5)。这意味着相机将始终围绕这个点进行旋转。
+// controls.maxPolarAngle = THREE.MathUtils.degToRad(80); // 设置相机的上下限为 80 度。
 
 // 渲染
 const animate = function () {
   requestAnimationFrame(animate);
   renderer.render(scene, camera);
   css2Renderer.render(scene, camera);
-  controls.update();
+  // controls.update();
 };
 animate();
 
 // 高度
-const MAP_DEPTH = 0.2;
+// const MAP_DEPTH = 0.2;
+const MAP_DEPTH = 0.1;
 // 转换坐标函数
 const projection = d3
   .geoMercator()
@@ -145,11 +148,13 @@ function operationData(jsondata) {
 
   // geo信息
   const features = jsondata.features;
+  console.log("🚀 ~ operationData ~ features:", features)
   features.forEach((feature) => {
     // 单个省份 对象
     const province = new THREE.Object3D();
     // 地址
     province.properties = feature.properties.name;
+    console.log("🚀 ~ features.forEach ~ province.properties:", province.properties)
     province.isHover = false;
     // 多个情况
     if (feature.geometry.type === "MultiPolygon") {
@@ -175,6 +180,7 @@ function operationData(jsondata) {
       });
     }
     const label = drawLabelText(feature);
+    console.log("🚀 ~ features.forEach ~ label:", label)
     labelList.push({ name: feature.properties.name, label });
     province.add(label);
     map.add(province);
@@ -204,7 +210,7 @@ function drawBoundary(polygon) {
   const lineGeometry = new THREE.BufferGeometry().setFromPoints(points);
   const lineMaterial = new THREE.LineBasicMaterial({
     color: 0xffffff,
-    linewidth: 2,
+    linewidth: 2, 
     transparent: true,
     depthTest: false,
   });
