@@ -1,0 +1,9 @@
+.flex {
+  display: flex;
+  gap: 12px;
+  line-height: 22px;
+  font-size: 14px;
+}
+
+.loading {
+}
