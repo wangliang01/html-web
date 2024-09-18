@@ -1,4 +1,4 @@
 {
   "compile-hero.disable-compile-files-on-did-save-code": true,
-  "livePreview.defaultPreviewPath": "/50.ThreeJs实战/index.html"
+  "livePreview.defaultPreviewPath": "/canvas-for-time/arc.html"
 }

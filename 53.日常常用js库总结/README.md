@@ -157,9 +157,12 @@ Awesome GitHub Repo 会收集整理 GitHub 上高质量、有趣的开源项目�
 
 ### 图片处理
 
+- [viewerjs](https://github.com/fengyuanchen/viewerjs) - 一个预览图片的js库
 - [cropperjs](https://github.com/fengyuanchen/cropperjs) - Cropperjs 是一个开源的 JavaScript 图像裁剪插件，它基于 Canvas 实现，支持移动、缩放、旋转和翻转。
 - [vue-cropper](https://github.com/Agontuk/vue-cropper) - Vue-cropperjs 是一个基于 Vue 的图片裁剪插件。
 - [vue-lazyload](https://github.com/hilongjw/vue-lazyload) - Vue-lazyload 是一个 Vue 的图片懒加载插件。
+- [photo-editor](https://fengyuanchen.github.io/photo-editor/) - Photo Editor 是一个基于 cropperjs 的图片编辑插件。
+- [compressorjs](https://github.com/fengyuanchen/compressorjs) - Compressorjs 是一个用于压缩图片的 JavaScript 库。
 
 ### 文档处理(word, excel, ppt, markdown)
 
